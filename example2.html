@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome to Vue</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+    <div id="simple">
+        <h2>{{message}}</h2>
+    </div>
+
+    <script>
+        var model = {
+            message: 'hello vue.js !'
+        };
+
+        var simple = new Vue({
+            el: '#simple',
+            data: model
+        })
+    </script>
+
+</body>
+
+</html>
