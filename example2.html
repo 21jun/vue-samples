@@ -7,18 +7,16 @@
 </head>
 
 <body>
-    <div id="simple">
-        <h2>{{message}}</h2>
+    <div id="app">
+        <p v-if="seen">이제 나를 볼 수 있어요</p>
     </div>
 
     <script>
-        var model = {
-            message: 'hello vue.js !'
-        };
-
-        var simple = new Vue({
-            el: '#simple',
-            data: model
+        var app = new Vue({
+            el: '#app',
+            data: {
+                seen: true
+            }
         })
     </script>
 
