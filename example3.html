@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome to Vue</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+    <div id="app">
+        <li v-for="info in infomation">
+            이름은 {{info.name}}, 나이는 {{info.age}}, 직업은 {{info.job}}
+        </li>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                infomation: [{
+                    name: '이원준',
+                    age: 22,
+                    job: 'student'
+                }, {
+                    name: '조유신',
+                    age: 22,
+                    job: 'student'
+                }, ]
+            }
+        })
+    </script>
+
+</body>
+
+</html>
