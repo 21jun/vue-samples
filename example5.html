@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome to Vue</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" id='a' v-model:value="message">
+        <h4>{{message}}</h4>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: '값을 바꿔보세요',
+            }
+        })
+    </script>
+
+</body>
+
+</html>
