@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome to Vue</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" id='a' v-bind:value="message">
+        <img v-bind:src="path">
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: 'v-bind directive',
+                path: 'https://www.gstatic.com/webp/gallery3/1.png'
+            }
+        })
+    </script>
+
+</body>
+
+</html>
